@@ -101,8 +101,8 @@ for (const { title, nums } of tests) {
 
   console.log(`-------------------------------------------------`);
   console.log(title);
-  console.log('Было:', ser.length);
-  console.log('Стало:', unser.length);
-  console.log('Сжатие:', (ser.length / unser.length).toFixed(2), 'x');
+  console.log('Было:', nums.join(',').length);
+  console.log('Стало:', ser.length);
+  console.log('Сжатие:', (nums.join(',').length / ser.length).toFixed(2), 'x');
   console.log('Сходится до и после сериалайза:', JSON.stringify(nums) === JSON.stringify(unser));
 }
